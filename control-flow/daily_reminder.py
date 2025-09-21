@@ -3,7 +3,7 @@ priority = input("Priority (high/medium/low): ")
 time_bound = input("Is it time-bound? (yes/no): ")
 
 urgency_message = ""
-if time_bound.lower() == "yes":
+if time_bound == "yes":
     urgency_message = " that requires immediate attention today!"
 
 # Traitement de la tâche avec la priorité via le "match case"
