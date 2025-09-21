@@ -1,6 +1,6 @@
 Task = input("What is your daily reminder task?")
-Priority = input("What is the priority level (low, medium, high)?").lower()
-Time_Bound = input("Is this task time-bound? (yes/no)").lower()
+Priority = input("What is the priority level (low, medium, high)?")
+Time_Bound = input("Is this task time-bound? (yes/no)")
 is_priority = False
 
 match Priority :
