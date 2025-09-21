@@ -1,20 +1,18 @@
-Task = input("What is your daily reminder task?")
-Priority = input("What is the priority level (low, medium, high)?")
-Time_Bound = input("Is this task time-bound? (yes/no)")
-is_priority = False
+task = input("Enter your task: ")
+priority = input("Priority (high/medium/low): ")
+time_bound = input("Is it time-bound? (yes/no): ")
 
-match Priority :
+urgency_message = ""
+if time_bound.lower() == "yes":
+    urgency_message = " that requires immediate attention today!"
+
+# Traitement de la tâche avec la priorité via le "match case"
+match priority.lower():
     case "high":
-        is_priority = True
- 
+        print(f"Reminder: '{task}' is a high priority task{urgency_message}.")
     case "medium":
-        is_priority = True
+        print(f"Reminder: '{task}' is a medium priority task{urgency_message}.")
     case "low":
-        is_priority = True
+        print(f"Note: '{task}' is a low priority task. Consider completing it when you have free time.")
     case _:
-        print("Invalid priority level. Please enter low, medium, or high.")
-
-if Time_Bound == "yes" and is_priority:
-    print(f"Reminder: '{Task}' is a high priority task that requires immediate attention today")
-elif Time_Bound == "no" and is_priority:
-    print(f"Note: '{Task}' is a low priority task. Consider completing it when you have free time.")
+        print("Invalid priority entered. Please choose 'high', 'medium', or 'low'.")
