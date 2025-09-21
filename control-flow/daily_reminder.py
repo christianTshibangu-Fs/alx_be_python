@@ -7,7 +7,7 @@ if time_bound.lower() == "yes":
     urgency_message = " that requires immediate attention today!"
 
 # Traitement de la tâche avec la priorité via le "match case"
-match priority.lower():
+match priority:
     case "high":
         print(f"Reminder: '{task}' is a high priority task{urgency_message}.")
     case "medium":
