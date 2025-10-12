@@ -5,12 +5,12 @@ class Shape:
         raise NotImplementedError("Subclasses must implement this method")
     
 class Rectangle(Shape):
-    def __init__(self, width, height):
+    def __init__(self, lenght, width):
+        self.lenght = lenght
         self.width = width
-        self.height = height
     
     def area(self):
-        return self.width * self.height
+        return self.lenght * self.width 
 
 class Circle(Shape):
     def __init__(self, radius):
