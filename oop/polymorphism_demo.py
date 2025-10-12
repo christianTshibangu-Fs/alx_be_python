@@ -10,8 +10,8 @@ class Rectangle(Shape):
         self.width = width
     
     def area(self):
-        return self.lenght * self.width
-    
+        return f'{self.lenght}, {self.lenght * self.width}'
+        
 class Circle(Shape):
     def __init__(self, radius):
         self.radius = radius
