@@ -28,7 +28,7 @@ class Library:
 
     def add_book(self, book):
         self.books.append(book)
-        print(f'Added "{book.title}" by {book.author} to the library.')
+
 
     def list_books(self):
         for book in self.books:
